@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WareHouse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="New_Register">Nuevo Registro</string>
+	<string name="Consult">Consultar</string>
+	<string name="Go_Back">Volver</string>
+	<string name="presents_NewPerson">¿Vas a crear una nueva persona?</string>
+	<string name="Yes">Si</string>
+	<string name="No">No</string>
+	<string name="presents_ViewInsert">Inserta el nombre</string>
+	<string name="Next">Siguiente</string>
+	<string name="Configuration">Configuración</string>
+	<string name="present_NewPerson_No_Empty_Name">El nombre no puede ser vacío</string>
+	<string name="present_NewPerson_Problems_Create">Ha ocurrido un error</string>
+	<string name="present_NewRegister_Save_Present">Se ha guardado el regalo</string>
+	<string name="present_NewRegister_Cant_Save_Presnt">No se ha podido guardar el regalo, comprueba que los campos son correctos</string>
+	<string name="present_consult_Remove_Success">Se ha eliminado el regalo</string>
+	<string name="present_consult_Remove_NOT_Success">NO se ha podido eliminar el regalo</string>
+	<string name="present_NewRegister_Present_Empty">El nombre regalo no puede estar vacío</string>
+	<string name="present_NewRegister_Name_Empty">El nombre de la persona no puede estar vacío</string>
+	<string name="present_NewRegister_limit_text">Has llegado al límite de carácteres</string>
+	<string name="login_New">Es tu primera vez en la aplicación. Insertar una contraseña nueva</string>
+	<string name="Hello">Hola</string>
+	<string name="login_Not_New">Inserta la contraseña</string>
+	<string name="login_Accept">Aceptar</string>
+	<string name="Welcome">Bienvenido!</string>
+	<string name="login_Not_Success">Contraseña incorrecta</string>
+	<string name="login_Save">Contraseña guardada, será usada para las próximas veces</string>
+	<string name="login_Name_Empty">El nombre no puede ser vacío</string>
+	<string name="login_Password_Empty">La contraseña no puede ser vacía</string>
+	<string name="BD_Problems">Ha ocurrido un error al guarda la información en la base de datos</string>
+	<string name="name">Nombre</string>
+	<string name="password">Contraseña</string>
+	<string name="login_import_success">Datos almacenados</string>
+	<string name="login_language_success">Idioma guardado</string>
+	<string name="login_import">Importar</string>
+	<string name="login_export">Exportar</string>
+	
+</resources>

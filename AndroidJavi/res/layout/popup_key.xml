@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    android:id="@+id/popup_key_layout">
+
+    <TextView
+        android:id="@+id/popup_key_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="Introduce la contraseña para acceder"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/popup_key_buttonAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
+        android:text="Autentificar"
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/popup_key_editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/popup_key_editTextPass"
+        android:layout_alignLeft="@+id/popup_key_editTextPass"
+        android:layout_alignRight="@+id/popup_key_editTextPass"
+        
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/popup_key_editTextPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/popup_key_buttonAccept"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:ems="10" >
+    </EditText>
+
+    
+
+</RelativeLayout>

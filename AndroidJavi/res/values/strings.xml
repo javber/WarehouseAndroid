@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Warehouse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="New_Register">New Register</string>
+	<string name="Consult">Consult</string>
+	<string name="Go_Back">Return</string>
+	<string name="presents_NewPerson">¿Do you create a new person?</string>
+	<string name="Yes">Yes</string>
+	<string name="No">No</string>
+	<string name="presents_ViewInsert">Insert the name</string>
+	<string name="Next">Next</string>
+	<string name="Configuration">Configuration</string>
+	<string name="present_NewPerson_No_Empty_Name">The name cant be empty</string>
+	<string name="present_NewPerson_Problems_Create">It has been occured a error</string>
+	<string name="present_NewRegister_Save_Present">It has been save the present</string>
+	<string name="present_NewRegister_Cant_Save_Presnt">It cant save the present, check the fields</string>
+	<string name="present_consult_Remove_Success">It has been removed the present</string>
+	<string name="present_consult_Remove_NOT_Success">It has not been removed the present</string>
+	<string name="present_NewRegister_Present_Empty">The name present cant be empty</string>
+	<string name="present_NewRegister_Name_Empty">The name person cant be empty</string>
+	<string name="present_NewRegister_limit_text">It has been arrived to the limit of characters</string>
+	<string name="login_New">That is your first time in the app. Insert a password, it shall be saved</string>
+	<string name="Hello">Hi</string>
+	<string name="login_Not_New">Insert the password</string>
+	<string name="login_Accept">Accept</string>
+	<string name="Welcome">Welcome!</string>
+	<string name="login_Not_Success">Password incorrect</string>
+	<string name="login_Save">Password saved, it shall be the same for the next times</string>
+	<string name="login_Name_Empty">The name cant be empty</string>
+	<string name="login_Password_Empty">The password cant be empty</string>
+	<string name="BD_Problems">Its has been occured a problem storing the information</string>
+	<string name="name">Name</string>
+	<string name="password">Password</string>
+	<string name="login_import_success">Data stored</string>
+	<string name="login_language_success">Language stored</string>
+	<string name="login_import">Import</string>
+	<string name="login_export">Export</string>
+	
+</resources>
