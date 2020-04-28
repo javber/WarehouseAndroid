@@ -36,6 +36,7 @@ public class Presents_Consult extends Activity {
 
 	@SuppressWarnings("unused")
 	private LinearLayout layout;
+	private TextView textViewSelectName;
 	private Spinner spinnerName;
 	private Button bGoEdit;
 	private Button bRemovePerson;
@@ -54,8 +55,20 @@ public class Presents_Consult extends Activity {
 
 		initComponents();
 		initPreviousValues();
+		initLanguage();
 
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+	}
+
+	/**
+	 * Init Language
+	 */
+	private void initLanguage() {
+		textViewSelectName.setText(R.string.present_consult_select_name);
+		bGoEdit.setText(R.string.edit);
+		bRemovePerson.setText(R.string.present_consult_remove_person_button);
+		bRemovePresent.setText(R.string.present_consult_remove_present_button);
+		bGoBack.setText(R.string.Go_Back);
 	}
 
 	private void initPreviousValues() {
@@ -74,6 +87,7 @@ public class Presents_Consult extends Activity {
 	 */
 	private void initComponents() {
 		layout = (LinearLayout) findViewById(R.id.present_consult_layout);
+		textViewSelectName = (TextView) findViewById(R.id.presents_checknewperson_textViewSelectName);
 		spinnerName = (Spinner) findViewById(R.id.presents_consult_spinner);
 		tableLayout = (TableLayout) findViewById(R.id.table);
 		bGoEdit = (Button) findViewById(R.id.presents_consult_buttonEdit);
@@ -135,7 +149,7 @@ public class Presents_Consult extends Activity {
 	public void askToRemovePerson() {
 
 		AlertDialog.Builder alert = new AlertDialog.Builder(this);
-		alert.setTitle("¿Confirmas que deseas elimiar el usuario?");
+		alert.setTitle(getResources().getString(R.string.present_consult_remove_person));
 		alert.setPositiveButton("Si", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				processRemovePerson();
@@ -154,7 +168,7 @@ public class Presents_Consult extends Activity {
 	public void askToRemovePresent() {
 
 		AlertDialog.Builder alert = new AlertDialog.Builder(this);
-		alert.setTitle("¿Confirmas que deseas elimiar el regalo?");
+		alert.setTitle(getResources().getString(R.string.present_consult_remove_present));
 		alert.setPositiveButton("Si", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				processRemovePresent();
@@ -170,16 +184,26 @@ public class Presents_Consult extends Activity {
 		alert.show();
 	}
 
+	private void processRemovePerson() {
+		boolean resultBD = Util.fachada.processRemoveUser(name);
+		if (resultBD) {
+			Util.showPopUp(this, R.string.present_consult_Remove_Success_person);
+			Util.finish(this);
+		} else {
+			Util.showPopUp(this, R.string.present_consult_Remove_NOT_Success_present);
+		}
+	}
+
 	public void processRemovePresent() {
 		TextView[] dataPresent = tableDynaDinamyc.getCurrentRowSelected();
 		if (dataPresent.length > 0) {
 
 			boolean resultBD = Util.fachada.removeRegister(dataPresent[0].getText().toString());
 			if (resultBD) {
-				Util.showPopUp(this, R.string.present_consult_Remove_Success);
+				Util.showPopUp(this, R.string.present_consult_Remove_Success_present);
 				updateTableWithName(name);
 			} else {
-				Util.showPopUp(this, R.string.present_consult_Remove_NOT_Success);
+				Util.showPopUp(this, R.string.present_consult_Remove_NOT_Success_present);
 			}
 		}
 	}
@@ -215,11 +239,6 @@ public class Presents_Consult extends Activity {
 		} else {
 			setVisibilityButtonSelectedPerson(View.VISIBLE);
 		}
-	}
-
-	private void processRemovePerson() {
-		Util.fachada.processRemoveUser(name);
-		Util.finish(this);
 	}
 
 	private void updateTableWithName(String name) {

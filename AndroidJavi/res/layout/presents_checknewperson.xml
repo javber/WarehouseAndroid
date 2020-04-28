@@ -47,7 +47,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/presents_checknewperson_textViewInserta"
+        android:id="@+id/presents_storeregister_textViewPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Inserta el nombre" />

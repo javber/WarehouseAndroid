@@ -38,6 +38,10 @@ public class Presents_StoreRegister extends Activity {
 	@SuppressWarnings("unused")
 	private LinearLayout layout;
 	private Spinner spinnerName;
+	private TextView edittextName;
+	private TextView edittextPresent;
+	private TextView edittextPrice;
+	private TextView edittextImportance;
 	private EditText editTextNamePresent;
 	private EditText editTextPricePresent;
 	private RatingBar ratingBarImportance;
@@ -65,8 +69,22 @@ public class Presents_StoreRegister extends Activity {
 
 		initComponents();
 		initPreviousValues();
+		initLanguage();
 
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+	}
+
+	/**
+	 * Init Language
+	 */
+	private void initLanguage() {
+		edittextName.setText(R.string.name);
+		edittextPresent.setText(R.string.present);
+		edittextPrice.setText(R.string.price);
+		edittextImportance.setText(R.string.importance);
+		bGoCalendar.setText(R.string.calendar);
+		buttonSave.setText(R.string.save);
+		bGoBack.setText(R.string.Go_Back);
 	}
 
 	private void initPreviousValues() {
@@ -120,18 +138,23 @@ public class Presents_StoreRegister extends Activity {
 	private void initComponents() {
 		layout = (LinearLayout) findViewById(R.id.present_storeregister_layout);
 
+		edittextName = (TextView) findViewById(R.id.presents_storeregister_textViewName);
+		edittextPresent = (TextView) findViewById(R.id.presents_storeregister_textViewPresent);
+		edittextPrice = (TextView) findViewById(R.id.presents_storeregister_textViewPrice);
+		edittextImportance = (TextView) findViewById(R.id.presents_storeregister_textViewImportance);
+
 		spinnerName = (Spinner) findViewById(R.id.presents_newregister_spinner);
 		initSpinner();
 
-		editTextNamePresent = (EditText) findViewById(R.id.presents_newregister_editTextNamePresent);
+		editTextNamePresent = (EditText) findViewById(R.id.presents_storeregister_editTextNamePresent);
 		limitTextinTextView(editTextNamePresent, Constant.LIMIT_TEXT);
 
-		editTextPricePresent = (EditText) findViewById(R.id.presents_newregister_editTextPricePresent);
+		editTextPricePresent = (EditText) findViewById(R.id.presents_storeregister_editTextPricePresent);
 		limitTextinTextView(editTextPricePresent, Constant.LIMIT_TEXT);
 
-		ratingBarImportance = (RatingBar) findViewById(R.id.presents_newregister_ratingBarImportance);
+		ratingBarImportance = (RatingBar) findViewById(R.id.presents_storeregister_ratingBarImportance);
 
-		buttonSave = (Button) findViewById(R.id.presents_newregister_buttonSave);
+		buttonSave = (Button) findViewById(R.id.presents_storeregister_buttonSave);
 		buttonSave.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -140,7 +163,7 @@ public class Presents_StoreRegister extends Activity {
 			}
 		});
 
-		bGoCalendar = (Button) findViewById(R.id.presents_newregister_buttonGoCalendar);
+		bGoCalendar = (Button) findViewById(R.id.presents_storeregister_buttonGoCalendar);
 		bGoCalendar.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -152,7 +175,7 @@ public class Presents_StoreRegister extends Activity {
 		textViewDate = (TextView) findViewById(R.id.presents_newregister_textViewDate);
 		textViewDate.setText("");
 
-		bGoBack = (Button) findViewById(R.id.presents_newregister_buttonGoBack);
+		bGoBack = (Button) findViewById(R.id.presents_storeregister_buttonGoBack);
 		bGoBack.setOnClickListener(new View.OnClickListener() {
 
 			@Override

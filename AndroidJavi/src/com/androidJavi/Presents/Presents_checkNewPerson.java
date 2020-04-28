@@ -69,7 +69,7 @@ public class Presents_checkNewPerson extends Activity {
 		textViewAsk = (TextView) findViewById(R.id.presents_checknewperson_textViewAsk);
 		buttonYes = (Button) findViewById(R.id.presents_checknewperson_buttonYes);
 		buttonNo = (Button) findViewById(R.id.presents_checknewperson_buttonNo);
-		textViewInsert = (TextView) findViewById(R.id.presents_checknewperson_textViewInserta);
+		textViewInsert = (TextView) findViewById(R.id.presents_storeregister_textViewPrice);
 		buttonNext = (Button) findViewById(R.id.presents_checknewperson_buttonNext);
 		editTexNewName = (EditText) findViewById(R.id.presents_checknewperson_editTextNewName);
 		bGoBack = (Button) findViewById(R.id.presents_checknewperson_buttonGoBack);

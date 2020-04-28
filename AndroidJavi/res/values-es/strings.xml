@@ -17,8 +17,10 @@
 	<string name="present_NewPerson_Problems_Create">Ha ocurrido un error</string>
 	<string name="present_NewRegister_Save_Present">Se ha guardado el regalo</string>
 	<string name="present_NewRegister_Cant_Save_Presnt">No se ha podido guardar el regalo, comprueba que los campos son correctos</string>
-	<string name="present_consult_Remove_Success">Se ha eliminado el regalo</string>
-	<string name="present_consult_Remove_NOT_Success">NO se ha podido eliminar el regalo</string>
+	<string name="present_consult_Remove_Success_present">Se ha eliminado el regalo</string>
+	<string name="present_consult_Remove_NOT_Success_present">NO se ha podido eliminar el regalo</string>
+	<string name="present_consult_Remove_Success_person">Se ha eliminado el usuario</string>
+	<string name="present_consult_Remove_NOT_Success_person">NO se ha podido eliminar el usuario</string>
 	<string name="present_NewRegister_Present_Empty">El nombre regalo no puede estar vacío</string>
 	<string name="present_NewRegister_Name_Empty">El nombre de la persona no puede estar vacío</string>
 	<string name="present_NewRegister_limit_text">Has llegado al límite de carácteres</string>
@@ -38,5 +40,16 @@
 	<string name="login_language_success">Idioma guardado</string>
 	<string name="login_import">Importar</string>
 	<string name="login_export">Exportar</string>
+	<string name="present_consult_remove_person">¿Confimas eliminar este usuario?</string>
+	<string name="present_consult_remove_present">¿Confirmas eliminar este regalo?</string>
+	<string name="present_consult_remove_person_button">Eliminar Usuario</string>
+	<string name="present_consult_remove_present_button">Eiminar Regalo</string>
+	<string name="present_consult_select_name">Selecciona el nombre</string>
+	<string name="edit">Editar</string>
+	<string name="save">Guardar</string>
+	<string name="calendar">Calendario</string>
+	<string name="present">Regalo</string>
+	<string name="price">Precio</string>
+	<string name="importance">Importancia</string>
 	
 </resources>

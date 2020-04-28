@@ -17,8 +17,10 @@
 	<string name="present_NewPerson_Problems_Create">It has been occured a error</string>
 	<string name="present_NewRegister_Save_Present">It has been save the present</string>
 	<string name="present_NewRegister_Cant_Save_Presnt">It cant save the present, check the fields</string>
-	<string name="present_consult_Remove_Success">It has been removed the present</string>
-	<string name="present_consult_Remove_NOT_Success">It has not been removed the present</string>
+	<string name="present_consult_Remove_Success_present">It has been removed the present</string>
+	<string name="present_consult_Remove_NOT_Success_present">It has not been removed the present</string>
+	<string name="present_consult_Remove_Success_person">It has been removed the user</string>
+	<string name="present_consult_Remove_NOT_Success_person">It has not been removed the user</string>
 	<string name="present_NewRegister_Present_Empty">The name present cant be empty</string>
 	<string name="present_NewRegister_Name_Empty">The name person cant be empty</string>
 	<string name="present_NewRegister_limit_text">It has been arrived to the limit of characters</string>
@@ -38,5 +40,16 @@
 	<string name="login_language_success">Language stored</string>
 	<string name="login_import">Import</string>
 	<string name="login_export">Export</string>
+	<string name="present_consult_remove_person">Do you confirm to delete this user?</string>
+	<string name="present_consult_remove_present">Do you confirm to delete this present?</string>
+	<string name="present_consult_remove_person_button">Remove user</string>
+	<string name="present_consult_remove_present_button">Remove present</string>
+	<string name="present_consult_select_name">Select name</string>
+	<string name="edit">Edit</string>
+	<string name="save">Save</string>
+	<string name="calendar">Calendar</string>
+	<string name="present">Present</string>
+	<string name="price">Price</string>
+	<string name="importance">Importance</string>
 	
 </resources>
