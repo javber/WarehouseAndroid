@@ -1,3 +1,2 @@
 # WarehouseAndroid
-Projoect WarehouseAndroid
-Done by Javier Bermúdez
+Projoect WarehouseAndroid by Javier Bermúdez
